@@ -42,7 +42,7 @@ public class MoneyTransferTest {
         val balanceFirstCardBefore = dashboardPage.getSecondCardBalance();
         val balanceSecondCardBefore = dashboardPage.getFirstCardBalance();
         val transferPage = dashboardPage.firstCardDeposit();
-        int amount =0;
+        int amount =11000;
         transferPage.transferMoney(amount, DataHelper.getSecondCardNumber());
         val balanceSecondCardAfter = dashboardPage.getSecondCardBalance();
         val balanceFirstCardAfter = dashboardPage.getFirstCardBalance();
@@ -60,7 +60,7 @@ public class MoneyTransferTest {
         val balanceFirstCardBefore = dashboardPage.getFirstCardBalance();
         val balanceSecondCardBefore = dashboardPage.getSecondCardBalance();
         val transferPage = dashboardPage.secondCardDeposit();
-        int amount =11000;
+        int amount =20100;
         transferPage.transferMoney(amount, DataHelper.getFirstCardNumber());
         transferPage.failedTransfer();
     }
